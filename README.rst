@@ -5,6 +5,7 @@
 ==============================================================================
 plaything.core
 ==============================================================================
+.. image:: https://github.com/PlaythingBlog/branding/blob/master/playthinglogo.png?raw=true
 
 Tell me what your product does
 
