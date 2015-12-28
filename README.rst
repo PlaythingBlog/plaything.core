@@ -3,37 +3,42 @@
    This text does not appear on pypi or github. It is a comment.
 
 ==============================================================================
-plaything.core
+PlayThing
 ==============================================================================
 .. image:: https://github.com/PlaythingBlog/branding/blob/master/playthinglogo.png?raw=true
 
-Tell me what your product does
+PlayThing is a microblogging platform
+We call our blogs "collections" and you can create multiple "collections" on a single
+``PlayThing`` site.
 
 Features
---------
+---------
+Multiple microblogs
+````````````````````
+PlayThing is a microblogging platform which allows you to run multiple microblogs
+at a time. 
+Each microblog is called a ``collection``.
 
-- Can be bullet points
+Multiuser
+````````````
+Out of the box PlayThing allows multiple users
 
+Different types of posts
+``````````````````````````
+A blog post can be any of the following types:
+Images, News Items, Links, Files or Events.
 
-Examples
---------
+Easily create your own post type
+```````````````````````````````````
+You can create your own custom content types and add them to your blog.
 
-This add-on can be seen in action at the following sites:
-- Is there a page on the internet where everybody can see the features?
 
 
 Documentation
 -------------
+Full documentation for end users will be hosted at
+http://plaything.readthedocs.org/ (really soon)
 
-Full documentation for end users can be found in the "docs" folder, and is also available online at http://docs.plone.org/foo/bar
-
-
-Translations
-------------
-
-This product has been translated into
-
-- Klingon (thanks, K'Plai)
 
 
 Installation
