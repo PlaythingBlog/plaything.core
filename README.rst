@@ -32,6 +32,15 @@ Easily create your own post type
 ```````````````````````````````````
 You can create your own custom content types and add them to your blog.
 
+Super secure
+`````````````
+PlayThing is built on a NoSQL platform which makes it immune to all too common
+SQL Injection Attacks.
+
+Restful API 
+````````````````
+Your developer friends will be happy too because we provide a restful API out of the box.
+
 
 
 Documentation
