@@ -1,0 +1,5 @@
+====================
+plaything.core
+====================
+
+User documentation

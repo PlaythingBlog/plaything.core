@@ -1,0 +1,21 @@
+query: 
+sort_on: created
+sort_reversed: True
+limit: 1000
+item_count: 30
+customViewFields: Title||Creator||Type||ModificationDate
+allow_discussion: 
+id: things
+exclude_from_nav: False
+title: Things
+description: The latest things
+subjects: 
+language: en-gb
+effective: 2015-12-27T19:42:00
+expires: 
+creators: admin
+contributors: 
+rights: 
+relatedItems: 
+Portal-Type: Collection
+

@@ -1,0 +1,49 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    i18n_domain="plaything.core">
+
+  <i18n:registerTranslations directory="locales" />
+
+  <includeDependencies package="." />
+
+  <include package=".browser" />
+
+
+  <genericsetup:registerProfile
+      name="default"
+      title="plaything.core"
+      directory="profiles/default"
+      description="Installs the plaything.core add-on."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+  <genericsetup:importStep
+      name="plaything.core-postInstall"
+      title="plaything.core post_install import step"
+      description="Post install import step from plaything.core"
+      handler=".setuphandlers.post_install">
+  </genericsetup:importStep>
+
+  <genericsetup:registerProfile
+      name="uninstall"
+      title="plaything.core"
+      directory="profiles/uninstall"
+      description="Uninstalls the plaything.core add-on."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+  <genericsetup:importStep
+      name="plaything.core-uninstall"
+      title="plaything.core uninstall import step"
+      description="Import step run during ininstalling plaything.core"
+      handler=".setuphandlers.uninstall">
+  </genericsetup:importStep>
+
+  <utility
+      factory=".setuphandlers.HiddenProfiles"
+      name="plaything.core-hiddenprofiles" />
+
+</configure>

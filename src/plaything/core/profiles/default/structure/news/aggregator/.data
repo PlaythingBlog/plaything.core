@@ -1,0 +1,21 @@
+query: 
+sort_on: effective
+sort_reversed: True
+limit: 1000
+item_count: 30
+customViewFields: Title||Creator||Type||ModificationDate
+allow_discussion: 
+id: aggregator
+exclude_from_nav: False
+title: News
+description: Site News
+subjects: 
+language: 
+effective: 
+expires: 
+creators: admin
+contributors: 
+rights: 
+relatedItems: 
+Portal-Type: Collection
+

@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<challenge-protocol-chooser >
+ <mapping label="Browser" protocols="" />
+ <mapping label="FTP" protocols="http" />
+ <mapping label="WebDAV" protocols="http" />
+ <mapping label="XML-RPC" protocols="http" />
+</challenge-protocol-chooser>

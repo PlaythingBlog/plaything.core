@@ -1,0 +1,21 @@
+query: 
+sort_on: start
+sort_reversed: True
+limit: 1000
+item_count: 30
+customViewFields: Title||Creator||Type||ModificationDate
+allow_discussion: 
+id: aggregator
+exclude_from_nav: False
+title: Events
+description: Site Events
+subjects: 
+language: 
+effective: 
+expires: 
+creators: admin
+contributors: 
+rights: 
+relatedItems: 
+Portal-Type: Collection
+
