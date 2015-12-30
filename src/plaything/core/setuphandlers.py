@@ -24,7 +24,11 @@ def post_install(context):
                                    set(['Tagged', 'Blog Posts']))
     # disable folderish tabs
     api.portal.set_registry_record('plone.nonfolderish_tabs', False)
-    
+
+    # set posts as the "default view"
+    portal = api.portal.get()
+    portal.setDefaultPage("posts")
+
 
 def uninstall(context):
     """Uninstall script"""

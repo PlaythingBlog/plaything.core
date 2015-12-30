@@ -7,7 +7,7 @@ PlayThing
 ==============================================================================
 .. image:: https://github.com/PlaythingBlog/branding/blob/master/playthinglogo.png?raw=true
 
-PlayThing is a microblogging platform
+PlayThing is a microblogging platform.
 We call our blogs "collections" and you can create multiple "collections" on a single
 ``PlayThing`` site.
 
