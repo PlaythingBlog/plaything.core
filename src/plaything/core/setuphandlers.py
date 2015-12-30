@@ -25,9 +25,9 @@ def post_install(context):
     # disable folderish tabs
     api.portal.set_registry_record('plone.nonfolderish_tabs', False)
 
-    # set posts as the "default view"
+    # set posts as the "default layout for the site"
     portal = api.portal.get()
-    portal.setDefaultPage("posts")
+    portal.setLayout("posts")
 
 
 def uninstall(context):
