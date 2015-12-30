@@ -46,6 +46,7 @@ setup(
         'plone.api',
         'setuptools',
         'z3c.jbot',
+        'collective.routes',
     ],
     extras_require={
         'test': [

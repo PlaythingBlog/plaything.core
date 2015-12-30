@@ -2,5 +2,6 @@
 <metadata>
   <version>1000</version>
   <dependencies>
+    <dependency>profile-collective.routes:default</dependency>
   </dependencies>
 </metadata>
