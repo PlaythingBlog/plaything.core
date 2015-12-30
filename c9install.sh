@@ -93,4 +93,4 @@ bin/buildout &
 spinner $!
 
 echo "----> setting up a Plaything site"
-python scripts/addPloneSite.py plaything
+bin/instance run scripts/addPloneSite.py plaything
