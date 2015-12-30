@@ -70,17 +70,6 @@ spinner()
     printf "    \b\b\b\b"
 }
 
-echo "getting the installer"
-if [ -s $INSTALLERFILE ]  
-then  
-    echo "----> We already have the installer file"
-else  
-    echo "----> Downloading the installer file"
-    wget $INSTALLERURL &
-    spinner $!
-fi
-echo "----> unpacking the installer"
-tar xfz $INSTALLERFILE
 
 mv $INSTALLERFOLDER/packages/buildout-cache.tar.bz2 .
 tar xfj buildout-cache.tar.bz2
