@@ -34,6 +34,13 @@ Step 3 - launch the site
 
 You can view the running site by going to "Preview" > "Preview Running Application"
 
+Views
+---------
+You can visit [yourplaythingsite]/posts to view all your posts
+or view posts by year or month e.g.
+[yourplaythingsite]/posts/2015 or [yourplaythingsite]/posts/2015/12
+
+
 Features
 ---------
 Discussion System
