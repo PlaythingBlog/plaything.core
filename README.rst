@@ -17,7 +17,9 @@ The fastest way to get started is to use the Plaything Cloud9 installer.
 
 Step 1 - checkout to c9
 `````````````````````````
-Go to http://c9.io and create a new workspace
+Go to http://c9.io and create a new workspace cloning from ``https://github.com/PlaythingBlog/plaything.core.git``
+
+.. image:: https://github.com/PlaythingBlog/plaything.core/blob/master/docs/images/creating-a-plaything-dev-box.png?raw=true
 
 Step 2 - run the installer
 `````````````````````````````
