@@ -39,7 +39,6 @@ Features
 Discussion System
 ``````````````````
 Builtin discussion system which includes basic captcha support to prevent spam.
-You can also enable disqus support if you prefer.
 
 Multiple microblogs
 ````````````````````
