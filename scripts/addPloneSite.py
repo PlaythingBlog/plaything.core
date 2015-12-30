@@ -62,11 +62,9 @@ site = addPloneSite(
     )
     
 # setup the site
-app = spoofRequest(app)
-site_import = utils.SetupSite(site, app)
-site_import()
+# app = spoofRequest(app)
 
 # Sets the current site as the active site
-setSite(app[site_id])
+# setSite(app[site_id])
 
 transaction.commit()

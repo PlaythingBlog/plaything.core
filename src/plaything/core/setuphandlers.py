@@ -26,8 +26,8 @@ def post_install(context):
     api.portal.set_registry_record('plone.nonfolderish_tabs', False)
 
     # set posts as the "default layout for the site"
-    portal = api.portal.get()
-    portal.setLayout("posts")
+    # portal = api.portal.get()
+    # portal.setLayout("posts")
 
 
 def uninstall(context):
