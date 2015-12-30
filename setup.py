@@ -47,6 +47,8 @@ setup(
         'setuptools',
         'z3c.jbot',
         'collective.routes',
+        'collective.disqus',
+        'collective.z3cform.norobots',
     ],
     extras_require={
         'test': [

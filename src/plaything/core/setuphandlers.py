@@ -24,6 +24,20 @@ def post_install(context):
                                    set(['Tagged', 'Blog Posts']))
     # disable folderish tabs
     api.portal.set_registry_record('plone.nonfolderish_tabs', False)
+    # discussion settings
+    NAMESPACE = 'plone.app.discussion.interfaces.IDiscussionSettings'
+    discussion_settings = [
+        {"name":"anonymous_email_enabled","value":True},
+        {"name":"anonymous_comments","value":True},
+        {"name":"captcha","value":"norobots"},
+        {"name":"globally_enabled","value":True},
+        {"name":"moderation_enabled","value":True},
+        {"name":"text_transform","value":"text/x-web-intelligent"},
+    ]
+    for setting in discussion_settings:
+        api.portal.set_registry_record(
+          '%s.%s' % (NAMESPACE,setting['name']),
+          setting['value'])
 
     # set posts as the "default layout for the site"
     # portal = api.portal.get()

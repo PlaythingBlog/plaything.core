@@ -36,6 +36,11 @@ You can view the running site by going to "Preview" > "Preview Running Applicati
 
 Features
 ---------
+Discussion System
+``````````````````
+Builtin discussion system which includes basic captcha support to prevent spam.
+You can also enable disqus support if you prefer.
+
 Multiple microblogs
 ````````````````````
 PlayThing is a microblogging platform which allows you to run multiple microblogs

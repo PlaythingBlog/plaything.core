@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<object meta_type="Plone Types Tool" name="portal_types">
+
+ <!-- We remove old ATContentTypes if they exist.
+      Instances of these types can still be looked at since the
+      skin-templates in CMFPlone are there but they cannot be edited -->
+ <object name="News Item" remove="True"
+    meta_type="Factory-based Type Information with dynamic views"/>
+ <object meta_type="Dexterity FTI" name="News Item" />
+
+</object>
