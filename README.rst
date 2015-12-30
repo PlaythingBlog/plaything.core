@@ -11,6 +11,19 @@ PlayThing is a microblogging platform.
 We call our blogs "collections" and you can create multiple "collections" on a single
 ``PlayThing`` site.
 
+Getting Started
+-----------------
+The fastest way to get started is to use the Plaything Cloud9 installer.
+
+Step 1 - checkout to c9
+`````````````````````````
+Go to http://c9.io and create a new workspace
+
+Step 2 - run the installer
+`````````````````````````````
+::
+    sh c9install.sh
+
 Features
 ---------
 Multiple microblogs
