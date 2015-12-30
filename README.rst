@@ -26,6 +26,14 @@ Step 2 - run the installer
 ::
     sh c9install.sh
 
+Step 3 - launch the site
+````````````````````````````
+::
+
+   bin/instance fg
+
+You can view the running site by going to "Preview" > "Preview Running Application"
+
 Features
 ---------
 Multiple microblogs
