@@ -47,6 +47,10 @@ Discussion System
 ``````````````````
 Builtin discussion system which includes basic captcha support to prevent spam.
 
+Tag support
+``````````````
+Tag your posts and view them organized by tag.
+
 Multiple microblogs
 ````````````````````
 PlayThing is a microblogging platform which allows you to run multiple microblogs
