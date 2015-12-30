@@ -1,4 +1,5 @@
 *zzzz
+.zedstate
 *.egg-info
 *.mo
 *.pyc
