@@ -9,7 +9,6 @@ from AccessControl.SecurityManager import setSecurityPolicy
 from plone import api
 from Testing.makerequest import makerequest
 from Products.CMFCore.tests.base.security import PermissiveSecurityPolicy, OmnipotentUser
-from travelkingstonjamaica.site.browser import utils
 from zope.component.hooks import setSite
 
 
@@ -45,7 +44,7 @@ site_id = sys.argv[3]
 default_extension_profiles = (
     'plone.app.caching:default',
     'plonetheme.barceloneta:default',
-    'travelkingstonjamaica.site:default',
+    'plaything.core:default',
 #    '{{ addon }}',
 )
 
@@ -55,7 +54,7 @@ if site_id in app.objectIds():
 
 site = addPloneSite(
     app, site_id,
-    title='TravelKingston',
+    title='Plaything',
     profile_id=_DEFAULT_PROFILE,
     extension_ids=default_extension_profiles,
     setup_content=True,
@@ -69,25 +68,5 @@ site_import()
 
 # Sets the current site as the active site
 setSite(app[site_id])
-
-# switch on the theme
-NAMESPACE = 'plone.app.theming.interfaces.IThemeSettings'
-api.portal.set_registry_record('%s.absolutePrefix' % NAMESPACE,
-                               u'/++theme++travelkingstonjamaica.theme')
-api.portal.set_registry_record('%s.currentTheme' % NAMESPACE,
-                               u'travelkingstonjamaica.theme')
-api.portal.set_registry_record('%s.doctype' % NAMESPACE, '<!doctype html>')
-api.portal.set_registry_record('%s.enabled' % NAMESPACE, True)
-api.portal.set_registry_record('%s.readNetwork' % NAMESPACE, True)
-api.portal.set_registry_record('%s.rules' % NAMESPACE,
-                             u'/++theme++travelkingstonjamaica.theme/rules.xml')
-
-
-
-#csvimport = utils.ImportCSVContent(attractions, app)
-#csvimport()
-
-#site = app.unrestrictedTraverse("%s/attractions/tkj.import.csvcontent" % site_id)
-#site.unrestrictedTraverse("attractions/tkj.import.csvcontent")
 
 transaction.commit()
