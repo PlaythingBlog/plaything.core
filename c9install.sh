@@ -48,6 +48,10 @@ spinner $!
 bin/buildout &
 spinner $!
 
+echo "----> cleaning up installer file and folder"
+rm -rf $INSTALLERFILE
+rm -rf $INSTALLERFOLDER
+
 echo "----> setting up a Plaything site"
 bin/instance run scripts/addSite.py plaything &
 spinner $!
