@@ -8,6 +8,7 @@ BUILDOUT="./bin/buildout -c heroku.cfg"
 ### the fancy way, installs a Plone site
 # commented out because it isn't working nicely
 export HOST=$URL
+echo "%%%%%%%%%%%%%%% database url is $DATABASE_URL"
 export SITE_ID=Plaything
 
 $INSTANCE run scripts/addSite.py $SITE_ID
