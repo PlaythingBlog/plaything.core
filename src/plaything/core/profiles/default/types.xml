@@ -7,5 +7,9 @@
  <object name="News Item" remove="True"
     meta_type="Factory-based Type Information with dynamic views"/>
  <object meta_type="Dexterity FTI" name="News Item" />
+ <object meta_type="Dexterity FTI" name="Image" />
+ <object meta_type="Dexterity FTI" name="Collection" />
+ <object meta_type="Dexterity FTI" name="Link" />
+ <object meta_type="Dexterity FTI" name="Document" />
 
 </object>

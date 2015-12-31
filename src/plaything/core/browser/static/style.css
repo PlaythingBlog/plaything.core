@@ -1,0 +1,10 @@
+/* make news item into text item with a different icon */
+body#visual-portal-wrapper.pat-plone #edit-zone li .contenttype-news-item:after {
+    content: '\e80e';
+}
+body .plone-navbar-nav > .selected > a,body .plone-navbar-nav > .selected > a:hover,body .plone-navbar-nav > .selected > a:focus {
+    color: #28587B;
+}
+body .plone-nav > li > a:hover,body .plone-nav > li > a:focus {
+    background-color: rgb(167, 42, 99);
+}

@@ -8,8 +8,6 @@ PlayThing
 .. image:: https://github.com/PlaythingBlog/branding/blob/master/playthinglogo.png?raw=true
 
 PlayThing is a microblogging platform.
-We call our blogs "collections" and you can create multiple "collections" on a single
-``PlayThing`` site.
 
 Getting Started
 -----------------
@@ -54,10 +52,12 @@ Tag support
 ``````````````
 Tag your posts and view them organized by tag.
 
-Multiple microblogs
-````````````````````
-Run multiple microblogs at a time. 
-Each microblog is called a ``collection``.
+Collections and folders for the meticulous
+````````````````````````````````````````````
+A ``collection`` is a special way of automatically organizing posts based on 
+date, type, creator or whatever. You can even treat each collection as 
+if it were a separate microblog. For the more discriminating you may prefer 
+"physically" grouping your posts into their own locations.
 
 Multiuser
 ````````````
@@ -66,11 +66,21 @@ Out of the box PlayThing allows multiple blog users
 Different types of posts
 ``````````````````````````
 A blog post can be any of the following types:
-Images, News Items, Links, Files or Events.
+Photos, News Items, Links, Files or Events.
+
+Embed Videos
+`````````````
+Embed videos or other media
 
 Easily create your own post type
 ```````````````````````````````````
-You can create your own custom content types and add them to your blog.
+Some times the existing post types just don't cut it.
+You may need a "customer testimonial" or "case study", just create your own
+custom post type add you'll have it for your PlayThing site.
+
+But wait there's more... We have Pages
+````````````````````````````````````````
+Add a page and make it your home page, so PlayThing can be your website
 
 Super secure
 `````````````
