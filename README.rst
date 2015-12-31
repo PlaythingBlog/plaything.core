@@ -24,7 +24,10 @@ Go to http://c9.io and create a new workspace cloning from ``https://github.com/
 Step 2 - run the installer
 `````````````````````````````
 ::
+
     sh c9install.sh
+
+This will install dependencies and setup a PlayThing site.
 
 Step 3 - launch the site
 ````````````````````````````
@@ -53,13 +56,12 @@ Tag your posts and view them organized by tag.
 
 Multiple microblogs
 ````````````````````
-PlayThing is a microblogging platform which allows you to run multiple microblogs
-at a time. 
+Run multiple microblogs at a time. 
 Each microblog is called a ``collection``.
 
 Multiuser
 ````````````
-Out of the box PlayThing allows multiple users
+Out of the box PlayThing allows multiple blog users
 
 Different types of posts
 ``````````````````````````

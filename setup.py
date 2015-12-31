@@ -48,6 +48,7 @@ setup(
         'z3c.jbot',
         'collective.routes',
         'collective.z3cform.norobots',
+        'wildcard.media',
     ],
     extras_require={
         'test': [

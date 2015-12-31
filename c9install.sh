@@ -19,7 +19,7 @@ spinner()
 }
 
 echo "----> installing dependencies"
-sudo apt-get install libxslt-dev libxml2-dev -y &
+sudo apt-get install libav-tools libxslt-dev libxml2-dev -y &
 spinner $!
 echo "----> setting up buildout defaults"
 mkdir $HOME/.buildout
