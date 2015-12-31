@@ -1,0 +1,19 @@
+{
+  "name": "Webflow. Meet Plone",
+  "description": "A Demo of Plone including a demo webflow theme. Login with admin:admin.",
+  "repository": "https://github.com/webflowmeetplone/webflowmeetplone",
+  "logo": "http://www.coactivate.org/projects/plone-marketing/plone-logo-guidelines/plone-vertical-logo.png",
+  "keywords": ["plone", "python", "cms"],
+  "website": "http://plone.org",
+  "env": {
+      "BUILDPACK_URL": "https://github.com/webflowmeetplone/webflowmeetplone",
+      "ADMIN_PASSWORD": { 
+                     "description" : "The password for the 'admin' user, change it and make a note of it.",
+                     "value" : "changeme"
+                     }
+  },
+  "addons": [
+    "heroku-postgresql:hobby-dev",
+    "mailgun"
+  ]
+}

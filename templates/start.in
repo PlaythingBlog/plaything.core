@@ -1,0 +1,13 @@
+#!/bin/bash
+INSTANCE=./bin/instance
+BUILDOUT="./bin/buildout -c heroku.cfg"
+
+### the straightforward way
+$INSTANCE console
+
+### the fancy way, installs a Plone site
+# commented out because it isn't working nicely
+#export HOST=$URL
+#export SITE_ID=Plone
+
+##$INSTANCE -O$SITE_ID run set_virtual_hosting.py && $INSTANCE console || $BUILDOUT install site && $INSTANCE console 
