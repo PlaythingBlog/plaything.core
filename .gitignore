@@ -8,12 +8,15 @@
 .project
 .pydevproject
 .settings/
-bin/
+bin/*
 buildout-cache/
 develop-eggs/
 parts/
 src/*
 !src/plaything
+!bin/compile
+!bin/detect
+!bin/release
 var/
 htmlcov/
 .coverage
