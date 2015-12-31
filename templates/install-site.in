@@ -10,7 +10,6 @@ BUILDOUT="./bin/buildout -c heroku.cfg"
 export HOST=$URL
 export SITE_ID=Plaything
 
-$BUILDOUT install site 
-# && $INSTANCE console 
+$INSTANCE run scripts/addSite.py $SITE_ID
 $INSTANCE -O$SITE_ID run set_virtual_hosting.py 
 # && $INSTANCE console || 
