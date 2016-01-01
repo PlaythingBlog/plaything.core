@@ -12,5 +12,5 @@ echo "%%%%%%%%%%%%%%% database url is $DATABASE_URL"
 export SITE_ID=Plaything
 
 $INSTANCE run scripts/addSite.py $SITE_ID
-$INSTANCE -O$SITE_ID run set_virtual_hosting.py 
+$INSTANCE -O$SITE_ID run scripts/set_virtual_hosting.py 
 # && $INSTANCE console || 
