@@ -5,6 +5,7 @@ SITE_NAME = getenv("SITE_NAME")
 HOST='%s.herokuapp.com' % SITE_NAME
 print "-----> Plone site %s exists" % SITE
 print "-----> Setting virtualhost settings"
-app.virtual_hosting.set_map('%s/%s' % (HOST,SITE))
-app.virtual_hosting.set_map(HOST + "/VirtualHostBase/https/%s/%s" % (HOST,SITE))
+vhosts = ['%s/%s' % (HOST,SITE), HOST + "/VirtualHostBase/https/%s/%s" % (HOST,SITE)]
+hosts = "\n".join(vhosts)
+app.virtual_hosting.set_map(hosts)
 transaction.commit()
