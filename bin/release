@@ -6,5 +6,5 @@ cat << EOF
 addons:
   - heroku-postgresql:dev
 default_process_types:
-  web: /usr/bin/env; python configure_zopeconf.py; bin/start #instance run test.py
+  web: /usr/bin/env; python configure_zopeconf.py; bin/install-site; bin/start #instance run test.py
 EOF
