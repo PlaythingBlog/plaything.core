@@ -5,4 +5,5 @@ HOST='*.herokuapp.com'
 print "-----> Plone site %s exists" % SITE
 print "-----> Setting virtualhost settings"
 app.virtual_hosting.set_map('%s/%s' % (HOST,SITE))
+app.virtual_hosting.set_map(HOST + "/VirtualHostBase/https/%s/%s" % (HOST,SITE))
 transaction.commit()
