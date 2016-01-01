@@ -10,9 +10,9 @@
       "ADMIN_PASSWORD": { 
                      "description" : "The password for the 'admin' user, change it and make a note of it.",
                      "value" : "changeme"
-                     }
+                     },
       "SITE_NAME": { 
-                     "description" : "Set this to the same as you name the app",
+                     "description" : "Set this to the same as you name the app.",
                      "value" : ""
                      }
   },
