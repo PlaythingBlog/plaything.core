@@ -5,7 +5,7 @@ PlayThing
 
 PlayThing is a microblogging platform.
 
-WARNING: At the moment, Plaything is being developed as a standalone product, not really an add-on. It can do bad things to existing sites. In short don't install this on a production site if you care about the data.
+At the moment, Plaything is being developed as a standalone product, not really an add-on. It can do bad things to existing sites. In short don't install this on a production site if you care about the data.
 
 Installation
 -----------------
