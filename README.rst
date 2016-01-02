@@ -1,6 +1,7 @@
 ==============================================================================
 PlayThing
 ==============================================================================
+
 .. image:: https://github.com/PlaythingBlog/branding/blob/master/playthinglogo.png?raw=true
 
 PlayThing is a microblogging platform.
