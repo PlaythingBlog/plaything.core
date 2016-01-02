@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 from Products.CMFPlone.interfaces import INonInstallable
+from Products.CMFPlone.interfaces import constrains
+from plone.app.textfield.value import RichTextValue
 from zope.interface import implementer
 from plone import api
 
@@ -17,6 +19,30 @@ def post_install(context):
     """Post install script"""
     if context.readDataFile('playthingcore_default.txt') is None:
         return
+    ## content setup
+    portal = api.portal.get()
+    api.content.delete(api.content.get('/Members'))
+    api.content.delete(api.content.get('/front-page'))
+    if not api.content.get('/blog'):
+        api.content.rename(obj=portal['news'], new_id='blog')
+        blog = portal['blog']
+        blog.title = 'Blog'
+        # api.content.transition(blog, transition='publish')
+        behavior = constrains.ISelectableConstrainTypes(blog)
+        behavior.setConstrainTypesMode(constrains.ENABLED)
+        behavior.setLocallyAllowedTypes(['File',
+                                         'Event',
+                                         'Folder',
+                                         'Image',
+                                         'News Item',
+                                         'Link',
+                                         'Collection'])
+        behavior.setImmediatelyAddableTypes(['News Item',
+                                         'Image',
+                                         'Link',
+                                         'Event',
+                                         'Folder'])
+    ## registry setup
     # set routes in the portal registry
     NAMESPACE = 'collective.routes.controlpanel.IRoutesSettings'
     api.portal.set_registry_record('%s.routes' % NAMESPACE,
@@ -48,8 +74,68 @@ def post_install(context):
                               'plone.toolbar_logo', 
                               u"/++resource++plaything.core/playthinglogo.svg"
                               )
+    create_frontpage()
+    set_blog_topic()
 
-    
+def create_frontpage():
+    portal = api.portal.get()
+    frontpage_id = 'front-page'
+    if frontpage_id not in portal.keys():
+        title = u"This is your Plaything!"
+        description = u"This is a brand spanking new Plaything site. Time to blog"
+        frontpage = api.content.create(
+            type='News Item', id=frontpage_id,
+            title=title,
+            description=description,
+            container=portal)
+        front_text = """<h3> Play thing is what you want, it's what you need.</h3>
+                       <p> This is an example of a simple blog post,
+                       you'll want to delete this before you get going</p>
+                        """
+                       
+        
+        frontpage.text = RichTextValue(
+            front_text,
+            'text/html',
+            'text/x-html-safe'
+        )
+        portal.setDefaultPage('front-page')
+        api.content.transition(frontpage, transition='publish')
+        frontpage.reindexObject()
+
+
+def set_blog_topic():
+    blog = api.content.get("/blog")
+    aggregator = api.content.get("/blog/aggregator")
+    api.content.delete(obj=aggregator,check_linkintegrity=False)
+    aggregator = api.content.create(
+                       type="Collection",
+                       id='aggregator', 
+                       title=u"Blog posts",
+                       description=u"All your blog posts",
+                       container=blog
+                       )
+    blog.setOrdering('unordered')
+    blog.setDefaultPage('aggregator')
+    # Set the Collection criteria.
+    #: Sort on the Effective date
+    aggregator.sort_on = u'effective'
+    aggregator.sort_reversed = True
+    #: Query by Type and Review State
+    aggregator.query = [
+            {'i': u'portal_type',
+             'o': u'plone.app.querystring.operation.selection.any',
+             'v': [u'News Item', 'Image', 'Event', 'Link', 'File'],
+             },
+            {'i': u'review_state',
+             'o': u'plone.app.querystring.operation.selection.any',
+             'v': [u'published'],
+             },
+        ]
+    aggregator.setLayout('summary_view')
+    api.content.transition(aggregator, transition='publish')
+
+
 def uninstall(context):
     """Uninstall script"""
     if context.readDataFile('playthingcore_uninstall.txt') is None:
