@@ -7,7 +7,7 @@
   "website": "https://github.com/PlaythingBlog",
   "env": {
       "SITE_NAME": { 
-                     "description" : "Set this to the same as you name the app.",
+                     "description" : "This is used in our virtual hosting setup. We recommend that you set it to the name of the 'App Name' that you used above.You could also use your preferred domain name",
                      "value" : ""
                      },
       "ADMIN_PASSWORD": { 
