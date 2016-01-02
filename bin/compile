@@ -17,10 +17,10 @@ UI_TARBALL=Plone-5.0-UnifiedInstaller.tgz
 UI_DIR=Plone-5.0-UnifiedInstaller
 PRECOMPILED_CACHE=https://github.com/webflowmeetplone/webflowmeetplone/releases/download/heroku-cheat-eggs/heroku-cheat-eggs.tgz
 PRECOMPILED_TARBALL=heroku-cheat-eggs.tgz
-APTSETUPSCRIPT=https://raw.githubusercontent.com/PlaythingBlog/plaything.core/master/bin/aptsetup
+APTSETUPSCRIPT=https://raw.githubusercontent.com/PlaythingBlog/plaything.core/master/templates/aptsetup
 
 curl -ol $APTSETUPSCRIPT
-bash aptsetup
+bash aptsetup $BUILD_DIR $CACHE_DIR
 
 # make sure dirs exist
 mkdir -p $CACHE_DIR

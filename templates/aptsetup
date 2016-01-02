@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# bin/compile <build-dir> <cache-dir>
+# bin/aptsetup <build-dir> <cache-dir>
 
 # fail fast
 set -e
