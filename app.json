@@ -6,7 +6,6 @@
   "keywords": ["plaything", "blog", "plone", "python", "cms"],
   "website": "https://github.com/PlaythingBlog",
   "env": {
-      "BUILDPACK_URL": "https://github.com/PlaythingBlog/plaything.core",
       "SITE_NAME": { 
                      "description" : "Set this to the same as you name the app.",
                      "value" : ""
@@ -14,7 +13,8 @@
       "ADMIN_PASSWORD": { 
                      "description" : "The password for the 'admin' user, change it and make a note of it.",
                      "value" : "change-this-password"
-                     }
+                     },
+      "BUILDPACK_URL": "https://github.com/PlaythingBlog/plaything.core"
   },
   "addons": [
     "heroku-postgresql:hobby-dev",
