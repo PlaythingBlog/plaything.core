@@ -49,6 +49,7 @@ setup(
         'collective.routes',
         'collective.z3cform.norobots',
         'wildcard.media',
+        'rapido.plone',
     ],
     extras_require={
         'test': [

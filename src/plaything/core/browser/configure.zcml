@@ -11,6 +11,29 @@
       layer="plaything.core.interfaces.IPlaythingCoreLayer"
       />
 
+  <browser:page
+      name="bob"
+      for="*"
+      layer="zope.interface.Interface"
+      class=".views.PostsList"
+      permission="zope2.View"
+      />
+      
+  <browser:page
+      name="_things"
+      for="*"
+      permission="zope.Public"
+      class="rapido.plone.browser.views.RapidoView"
+      />
+      
+  <!-- <browser:page
+      name="frontsummary"
+      for="*"
+      class=".views.FrontSummary"
+      template="templates/frontsummary.pt"
+      permission="zope2.View"
+      />
+  -->
   <!-- Publish static files -->
   <browser:resourceDirectory
       name="plaything.core"
