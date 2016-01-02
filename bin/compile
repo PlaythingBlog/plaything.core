@@ -17,7 +17,10 @@ UI_TARBALL=Plone-5.0-UnifiedInstaller.tgz
 UI_DIR=Plone-5.0-UnifiedInstaller
 PRECOMPILED_CACHE=https://github.com/webflowmeetplone/webflowmeetplone/releases/download/heroku-cheat-eggs/heroku-cheat-eggs.tgz
 PRECOMPILED_TARBALL=heroku-cheat-eggs.tgz
+APTSETUPSCRIPT=https://raw.githubusercontent.com/PlaythingBlog/plaything.core/master/bin/aptsetup
 
+curl -ol $APTSETUPSCRIPT
+bash aptsetup
 
 # make sure dirs exist
 mkdir -p $CACHE_DIR
@@ -117,7 +120,7 @@ cp -r $BUILD_DIR/parts $INSTALL_DIR
 cp -r $BUILD_DIR/var $INSTALL_DIR
 
 echo "-----> Copy configure_zopeconf.py script to slug"
-curl -OL "https://raw.githubusercontent.com/webflowmeetplone/webflowmeetplone/master/configure_zopeconf.py"
-cp -r $BUILD_DIR/configure_zopeconf.py $INSTALL_DIR
+curl -ol "https://raw.githubusercontent.com/webflowmeetplone/webflowmeetplone/master/configure_zopeconf.py"
+cp -r $build_dir/configure_zopeconf.py $install_dir
 
 echo "Done" | indent

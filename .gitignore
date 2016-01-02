@@ -14,6 +14,7 @@ develop-eggs/
 parts/
 src/*
 !src/plaything
+!bin/aptsetup
 !bin/compile
 !bin/detect
 !bin/release
