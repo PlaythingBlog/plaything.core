@@ -12,7 +12,7 @@ Installation
 -----------------
 
 Use Heroku
-~~~~~~~~~~~~~
+^^^^^^^^^^^^^^
 Click the Heroku button below to try out Plaything.
 We recommend that you set the ``App Name`` and the ``SITE_NAME`` to same thing.
 
@@ -21,7 +21,7 @@ We recommend that you set the ``App Name`` and the ``SITE_NAME`` to same thing.
 
 
 Use Cloud9
-~~~~~~~~~~~~~
+^^^^^^^^^^^^^^
 One way to get started on development is to use the Plaything Cloud9 installer.
 
 Step 1 - checkout to c9
