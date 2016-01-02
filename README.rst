@@ -11,8 +11,9 @@ At the moment, Plaything is being developed as a standalone product, not really 
 Install on Heroku
 ------------------
 
-Click the Heroku button below to try out Plaything.
+Click the Heroku button below to try out Plaything. Be up and running in 5 minutes.
 We recommend that you set the ``App Name`` and the ``SITE_NAME`` to same thing.
+NOT FOR PRODUCTION, JUST FOR TESTING.
 
 ..  image:: https://www.herokucdn.com/deploy/button.png
     :target: https://heroku.com/deploy?template=https://github.com/PlaythingBlog/plaything.core
