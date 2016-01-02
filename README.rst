@@ -8,11 +8,9 @@ PlayThing is a microblogging platform.
 
 At the moment, Plaything is being developed as a standalone product, not really an add-on. It can do bad things to existing sites. In short don't install this on a production site if you care about the data.
 
-Installation
------------------
+Install on Heroku
+------------------
 
-Use Heroku
-^^^^^^^^^^^^^^
 Click the Heroku button below to try out Plaything.
 We recommend that you set the ``App Name`` and the ``SITE_NAME`` to same thing.
 
@@ -20,8 +18,9 @@ We recommend that you set the ``App Name`` and the ``SITE_NAME`` to same thing.
     :target: https://heroku.com/deploy?template=https://github.com/PlaythingBlog/plaything.core
 
 
-Use Cloud9
-^^^^^^^^^^^^^^
+Install on Cloud9
+---------------------
+
 One way to get started on development is to use the Plaything Cloud9 installer.
 
 Step 1 - checkout to c9
