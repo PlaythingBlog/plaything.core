@@ -1,0 +1,74 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="plaything.core">
+<body>
+
+<metal:content-core fill-slot="content-core">
+
+<metal:posts define-macro="posts">
+
+<table class="listing pat-tablesorter" id="posts">
+    <thead>
+        <tr>
+            <th>
+                Title
+            </th>
+            <th>
+                Speaker
+            </th>
+            <th>
+                Audience
+            </th>
+            <th>
+                Time
+            </th>
+            <th>
+                Room
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr tal:repeat="post view/posts">
+            <td>
+                <a href=""
+                   class="pat-contentloader"
+                   data-pat-contentloader="url:${talk/url}?ajax_load=1; target:.talkinfo > *"
+                   tal:attributes="href string:${talk/url};
+                                   title talk/description"
+                   tal:content="talk/title">
+                   The 7 sins of plone development
+                </a>
+            </td>
+            <td tal:content="talk/speaker">
+                Philip Bauer
+            </td>
+            <td tal:content="talk/audience">
+                Advanced
+            </td>
+            <td tal:content="talk/start"
+                class="pat-moment"
+                data-pat-moment="format: LT">
+                12:00 a.m.
+            </td>
+            <td tal:content="talk/room">
+                Room 212
+            </td>
+
+        </tr>
+        <tr tal:condition="not:view/talks">
+            <td colspan=3>
+                No talks
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="talkinfo">
+    <span />
+</div>
+
+</metal:talklist>
+
+</metal:content-core>
+</body>
+</html>
