@@ -24,8 +24,8 @@ Install on Cloud9
 
 One way to get started on development is to use the Plaything Cloud9 installer.
 
-Step 1 - checkout to c9
-`````````````````````````
+Step 1 - clone from git to c9
+```````````````````````````````
 Go to http://c9.io and create a new workspace cloning from ``https://github.com/PlaythingBlog/plaything.core.git``
 
 .. image:: https://github.com/PlaythingBlog/plaything.core/blob/master/docs/images/creating-a-plaything-dev-box.png?raw=true
