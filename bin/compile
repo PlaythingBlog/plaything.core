@@ -120,7 +120,7 @@ cp -r $BUILD_DIR/parts $INSTALL_DIR
 cp -r $BUILD_DIR/var $INSTALL_DIR
 
 echo "-----> Copy configure_zopeconf.py script to slug"
-curl -ol "https://raw.githubusercontent.com/webflowmeetplone/webflowmeetplone/master/configure_zopeconf.py"
-cp -r $build_dir/configure_zopeconf.py $install_dir
+curl -OL "https://raw.githubusercontent.com/PlaythingBlog/plaything.core/master/configure_zopeconf.py"
+cp -r $BUILD_DIR/configure_zopeconf.py $INSTALL_DIR
 
 echo "Done" | indent
