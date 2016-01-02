@@ -89,8 +89,9 @@ def create_frontpage():
             description=description,
             container=portal)
         front_text = """<h3> Play thing is what you want, it's what you need.</h3>
-                       <p> This is an example of a simple blog post,
-                       you'll want to delete this before you get going</p>
+                       <p> This is an example of a blog post which happens to,
+                       act as the front page.
+                       Edit it to say what you want</p>
                         """
                        
         
