@@ -19,7 +19,7 @@ PRECOMPILED_CACHE=https://github.com/webflowmeetplone/webflowmeetplone/releases/
 PRECOMPILED_TARBALL=heroku-cheat-eggs.tgz
 APTSETUPSCRIPT=https://raw.githubusercontent.com/PlaythingBlog/plaything.core/master/templates/aptsetup
 
-curl -ol $APTSETUPSCRIPT
+curl -OL $APTSETUPSCRIPT
 bash aptsetup $BUILD_DIR $CACHE_DIR
 
 # make sure dirs exist
