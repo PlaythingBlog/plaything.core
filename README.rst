@@ -12,8 +12,8 @@ Install on Heroku
 ------------------
 
 Click the Heroku button below to try out Plaything. Be up and running in 5 minutes.
-We recommend that you set the ``App Name`` and the ``SITE_NAME`` to same thing.
-NOT FOR PRODUCTION, JUST FOR TESTING.
+During installation on Heroku we do some fancy rewriting with the virtual hosting infrastructure, to benefit from this we recommend that the ``App Name`` and the ``SITE_NAME`` be set to the same value (ie. if you name your app "cool-app", then set SITE_NAME to "cool-app" also).
+Free Heroku instances are definitely NOT FOR PRODUCTION, JUST FOR TESTING.
 
 ..  image:: https://www.herokucdn.com/deploy/button.png
     :target: https://heroku.com/deploy?template=https://github.com/PlaythingBlog/plaything.core
