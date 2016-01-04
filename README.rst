@@ -68,7 +68,7 @@ Collections and folders for the meticulous
 A ``collection`` is a special way of automatically organizing posts based on 
 date, type, creator or whatever. You can even treat each collection as 
 if it were a separate microblog. For the more discriminating you may prefer 
-"physically" grouping your posts into their own locations.
+"physically" group specific posts into their own ``folder`` based on your intended purpose.
 
 Multiuser
 ````````````
