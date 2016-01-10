@@ -1,18 +1,10 @@
-#!/home/dbain/Downloads/buildouts/plaything.core/venv/bin/python
+#!/usr/bin/env bash
+# bin/release <build-dir>
 
-import sys
-sys.path[0:0] = [
-  '/home/dbain/Downloads/buildouts/eggs/zest.releaser-6.4-py2.7.egg',
-  '/home/dbain/Downloads/buildouts/eggs/twine-1.6.5-py2.7.egg',
-  '/home/dbain/Downloads/buildouts/eggs/six-1.8.0-py2.7.egg',
-  '/home/dbain/Downloads/buildouts/eggs/colorama-0.3.5-py2.7.egg',
-  '/home/dbain/Downloads/buildouts/eggs/setuptools-18.1-py2.7.egg',
-  '/home/dbain/Downloads/buildouts/eggs/requests_toolbelt-0.5.1-py2.7.egg',
-  '/home/dbain/Downloads/buildouts/eggs/requests-2.9.1-py2.7.egg',
-  '/home/dbain/Downloads/buildouts/eggs/pkginfo-1.2.1-py2.7.egg',
-  ]
-
-import zest.releaser.release
-
-if __name__ == '__main__':
-    sys.exit(zest.releaser.release.main())
+cat << EOF
+---
+addons:
+  - heroku-postgresql:dev
+default_process_types:
+  web: /usr/bin/env; python configure_zopeconf.py; bin/install-site; bin/start 
+EOF
