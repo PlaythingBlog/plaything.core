@@ -47,7 +47,7 @@ def post_install(context):
     NAMESPACE = 'collective.routes.controlpanel.IRoutesSettings'
     api.portal.set_registry_record('%s.routes' % NAMESPACE,
                                    set(['Tagged', 'Blog Posts']))
-    # disable folderish tabs
+    # disable non-folderish tabs
     api.portal.set_registry_record('plone.nonfolderish_tabs', False)
     # discussion settings
     NAMESPACE = 'plone.app.discussion.interfaces.IDiscussionSettings'
